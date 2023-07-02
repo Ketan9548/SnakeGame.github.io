@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url(../background.jpg);
+    min-height: 100vh;
+    background-size: 126vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bord {
+    background: linear-gradient(rgb(247, 135, 135), rgb(254, 254, 126));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+#scoreBox {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 20px;
+    right: 161px;
+    font-size: 19px;
+    font-weight: bolder;
+
+}
+
+#hiscoreBox{
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 40px;
+    right: 161px;
+    font-size: 19px;
+    font-weight: bolder;
+}
+.head {
+    border: .18vmin solid red;
+    border-radius: 8px;
+    background: linear-gradient(rgb(255, 0, 0), rgb(241, 241, 72));
+    transform: scale(1.02);
+}
+
+.snake {
+    background: linear-gradient(rgb(75, 58, 240), rgb(173, 58, 240));
+    border: .21vmin solid white;
+    border-radius: 10px;
+
+}
+
+.food {
+    background: linear-gradient(rgb(75, 58, 240), rgb(173, 58, 240));
+    background-color: rgb(76, 58, 240);
+    border-radius: 9px;
+    border: .21vmin solid rgb(76, 58, 240);
+}
